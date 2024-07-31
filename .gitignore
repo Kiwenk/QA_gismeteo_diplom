@@ -1,7 +1,16 @@
+.venv
+.idea
+.pytest_cache
+.\tests\.pytest_cache\
+__pycache__
+tests/allure-results
+.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
 
 # C extensions
 *.so
