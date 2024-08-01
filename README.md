@@ -10,14 +10,13 @@
 - [Отчет в Telegram с помощью бота](#-Отчет-в-Telegram-с-помощью-бота)
 - [Видео прохождения тестов на Selenoid](#film_projector-Видео-прохождения-тестов-на-Selenoid)
 
-## Технологии и инструменты
+## :wrench: Технологии и инструменты
 <p>
 <a href="https://www.python.org/"><img src="resources/python.svg" width="50" height="50"  alt="Python" title="Python"/></a>
 <a href="https://www.jetbrains.com/pycharm/"><img src="resources/PyCharm_Icon.svg" width="50" height="50"  alt="Pycharm" title="IntelliJ IDEA"/></a>
 <a href="https://github.com/"><img src="resources/Github.svg" width="50" height="50"  alt="Github" title="GitHub"/></a>
 <a href="https://www.selenium.dev/"><img src="resources/selenium.svg" width="50" height="50"  alt="Selenium" title="Selenium"/></a>
 <a href="https://github.com/yashaka/selene"><img src="resources/selene.png" width="50" height="50"  alt="Selene" title="Selene"/></a>
-</p>
 <a href="https://aerokube.com/selenoid/"><img src="resources/Selenoid.svg" width="50" height="50"  alt="Selenoid" title="Selenoid"/></a>
 <a href="https://www.jenkins.io/"><img src="resources/Jenkins.svg" width="50" height="50"  alt="Jenkins" title="Jenkins"/></a>
 <a href="https://github.com/allure-framework/allure2"><img src="resources/Allure_Report.svg" width="50" height="50"  alt="Allure" title="Allure"/></a>
