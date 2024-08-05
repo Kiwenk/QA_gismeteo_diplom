@@ -17,7 +17,6 @@ class GismeteoTitleCheck:
         with allure.step('Проверяем Title страницы'):
             browser.should(have.title('GISMETEO'))
 
-
     def today_weather_title_check(self):
         with allure.step('Проверяем наименование."Погода в Москве сегодня"'):
             browser.element('.page-title').should(have.text('Погода в Москве сегодня'))
@@ -37,9 +36,9 @@ class GismeteoTitleCheck:
             self.open()
             self.moscow_choise()
 
-
     def open_moscow_check(self):
         with allure.step('Ищем город "Москва" через поиск'):
             browser.all('.breadcrumbs-link').second.should(have.text('Москва (город федерального значения)'))
+
 
 gismeteo_action = GismeteoTitleCheck()
