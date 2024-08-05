@@ -1,5 +1,5 @@
 import allure
-from modules.title_check import gismeteo_action
+from pages.title_check_page import gismeteo_action
 
 
 @allure.feature('Базовый UI')
