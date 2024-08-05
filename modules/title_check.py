@@ -32,11 +32,14 @@ class GismeteoTitleCheck:
             browser.element('[href="/nowcast-moscow-4368/"]').click()
             browser.element('.page-title').should(have.text('Радар осадков и гроз в Москве'))
 
-    def open_moscow_check(self):
+    def open_moscow(self):
         with allure.step('Ищем город "Москва" через поиск'):
             self.open()
             self.moscow_choise()
-            browser.all('.breadcrumbs-link').second.should(have.text('Москва (город федерального значения)'))
 
+
+    def open_moscow_check(self):
+        with allure.step('Ищем город "Москва" через поиск'):
+            browser.all('.breadcrumbs-link').second.should(have.text('Москва (город федерального значения)'))
 
 gismeteo_action = GismeteoTitleCheck()

@@ -22,6 +22,7 @@ def test_check_title_on_app_page():
 @allure.tag('gismeteo_UI')
 @allure.severity(allure.severity_level.CRITICAL)
 def test_search_check():
+    gismeteo_action.open_moscow()
     gismeteo_action.open_moscow_check()
 
 
