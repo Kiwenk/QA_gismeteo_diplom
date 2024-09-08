@@ -1,8 +1,8 @@
-from selene import browser, have
+from selene import browser, have, be
 import allure
 
 
-class GismeteoTitleCheck:
+class GismeteoUiPagesCheck:
 
     def open(self, address=''):
         with allure.step('Открываем сайт gismeteo'):
@@ -40,5 +40,13 @@ class GismeteoTitleCheck:
         with allure.step('Ищем город "Москва" через поиск'):
             browser.all('.breadcrumbs-link').second.should(have.text('Москва (город федерального значения)'))
 
+    def nav_buttons_is_visible(self):
+        with allure.step('Проверяем наличие навигационных кнопок на сайте'):
+            browser.element(".header-nav").should(be.visible)
 
-gismeteo_action = GismeteoTitleCheck()
+    def nav_text_is_visible(self, button_text):
+        with allure.step('Проверяем наличие текста навигационных кнопок на сайте'):
+            browser.element(".header-nav").should(have.text(f'{button_text}'))
+
+
+gismeteo_ui_action = GismeteoUiPagesCheck()
