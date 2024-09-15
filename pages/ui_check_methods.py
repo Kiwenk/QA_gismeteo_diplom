@@ -18,16 +18,16 @@ class GismeteoUiPagesCheck:
             browser.should(have.title('GISMETEO'))
 
     def today_weather_title_check(self):
-        with allure.step('Проверяем наименование."Погода в Москве сегодня"'):
+        with allure.step('Проверяем наименование на странице города. "Погода в Москве сегодня"'):
             browser.element('.page-title').should(have.text('Погода в Москве сегодня'))
 
     def three_days_weather_title_check(self):
-        with allure.step('Проверяем наименование."Погода в Москве на 3 дня"'):
+        with allure.step('Проверяем наименование на странице города."Погода в Москве на 3 дня"'):
             browser.element('[data-stat-value="3-days"]').click()
             browser.element('.page-title').should(have.text('Погода в Москве на 3 дня'))
 
     def radar_title_check(self):
-        with allure.step('Проверяем наименование."Радар осадков и гроз в Москве"'):
+        with allure.step('Проверяем наименование на странице города."Радар осадков и гроз в Москве"'):
             browser.element('[href="/nowcast-moscow-4368/"]').click()
             browser.element('.page-title').should(have.text('Радар осадков и гроз в Москве'))
 
@@ -37,16 +37,20 @@ class GismeteoUiPagesCheck:
             self.moscow_choise()
 
     def open_moscow_check(self):
-        with allure.step('Ищем город "Москва" через поиск'):
+        with allure.step('Проверяем наименование города - Москва'):
             browser.all('.breadcrumbs-link').second.should(have.text('Москва (город федерального значения)'))
 
     def nav_buttons_is_visible(self):
-        with allure.step('Проверяем наличие навигационных кнопок на сайте'):
+        with allure.step('Проверяем наличие навигационого блока на сайте'):
             browser.element(".header-nav").should(be.visible)
+
+    def nav_buttons_is_clickable(self):
+        with allure.step('Проверяем кликабельность навигационого блока на сайте'):
+            browser.element(".header-nav").should(be.clickable)
 
     def nav_text_is_visible(self, button_text):
         with allure.step('Проверяем наличие текста навигационных кнопок на сайте'):
-            browser.element(".header-nav").should(have.text(f'{button_text}'))
+            browser.all(".header-nav").should(have.text(f'{button_text}'))
 
 
 gismeteo_ui_action = GismeteoUiPagesCheck()
