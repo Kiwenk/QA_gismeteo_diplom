@@ -50,7 +50,7 @@ class GismeteoUiPagesCheck:
 
     def nav_text_is_visible(self, button_text):
         with allure.step('Проверяем наличие текста навигационных кнопок на сайте'):
-            browser.all(".header-nav").should(have.text(f'{button_text}'))
+            browser.element(".header-nav").should(have.text(f'{button_text}'))
 
 
 gismeteo_ui_action = GismeteoUiPagesCheck()
