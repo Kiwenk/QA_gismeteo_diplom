@@ -20,7 +20,7 @@
 <a href="https://aerokube.com/selenoid/"><img src="resources/Selenoid.svg" width="50" height="50"  alt="Selenoid" title="Selenoid"/></a>
 <a href="https://www.jenkins.io/"><img src="resources/Jenkins.svg" width="50" height="50"  alt="Jenkins" title="Jenkins"/></a>
 <a href="https://github.com/allure-framework/allure2"><img src="resources/Allure_Report.svg" width="50" height="50"  alt="Allure" title="Allure"/></a>
-<a href="https://selenide.org/"><img src="resources/Selenide.svg" width="50" height="50"  alt="Selenide" title="Selenide"/></a>
+<a href="https://qameta.io/"><img src="resources/Allure_Testops.svg" width="120" height="50"  alt="Allure_Test_Ops" title="Allure_Test_Ops"/></a>
 
 
 
@@ -38,9 +38,8 @@
 - Проверка тайтла страницы
 - Проверка работоспособности поиска
 - Проверка корректности наименования страниц
+- Проверка навигационого бара
 
-## :scroll: Примеры API тестов
-- Не реализовано на данный момент
 
 ## <img src="resources/Jenkins.svg" width="25" height="25"  alt="Jenkins" title="Jenkins"/></a> Сборка в Jenkins с параметрами
 >
@@ -56,7 +55,6 @@
 > Allure формирует подробный отчет о прогоне тестов. Кастомные фильтры и листенеры делают отчет максимально понятным
 >
 > Например в отчет пишутся все селекторы и методы <code>Selene</code>, отчеты формируются по категориям, в конце приложен скриншот, видео запись прогона теста и логи.
-Для API тестов полностью указаны данные запроса/ответа
 <p align="center">
 <img title="Allure отчет" src="resources/Allure_Overview.png">
 </p>
