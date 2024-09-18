@@ -19,7 +19,9 @@
 <a href="https://github.com/yashaka/selene"><img src="resources/selene.png" width="50" height="50"  alt="Selene" title="Selene"/></a>
 <a href="https://aerokube.com/selenoid/"><img src="resources/Selenoid.svg" width="50" height="50"  alt="Selenoid" title="Selenoid"/></a>
 <a href="https://www.jenkins.io/"><img src="resources/Jenkins.svg" width="50" height="50"  alt="Jenkins" title="Jenkins"/></a>
-<a href="https://github.com/allure-framework/allure2"><img src="resources/Allure_Report.svg" width="50" height="50"  alt="Allure" title="Allure"/></a>
+<a href="https://github.com/allure-framework/allure2"><img src="resources/Allure_Report.svg" width="50" height="50"  
+alt="Allure" title="Allure"/></a>
+<a href="https://telegram.org/"><img src="resources/Telegram.svg" width="50" height="50"  alt="Telegram" title="Telegram"/></a>
 <a href="https://qameta.io/"><img src="resources/Allure_Testops.svg" width="120" height="50"  alt="Allure_Test_Ops" title="Allure_Test_Ops"/></a>
 
 
